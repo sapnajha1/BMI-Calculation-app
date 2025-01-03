@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="88dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/txtTittle"
+            android:text="Your Health"
+            android:textSize="21sp"
+            android:textColor="@color/cardview_dark_background" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/txtResult"
+            android:text="Calculate Your BMI"
+            android:textSize="52sp"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+
+            android:textColor="@color/cardview_dark_background" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/txtMsg"
+            android:text="You are Healthy"
+            android:textSize="21sp"
+            android:textColor="@color/cardview_dark_background"
+            android:layout_marginTop="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtWeight"
+                android:hint="Weight (in KG)"
+                android:layout_marginTop="14dp"
+                android:inputType="number">
+
+            </EditText>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="21dp">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtHeightft"
+                    android:hint="Height (in Feet)"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="1"
+                    android:layout_marginRight="11dp">
+                </EditText>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtHeightIn"
+                    android:hint="Height (in Inch)"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="1"
+                    android:layout_marginRight="11dp">
+                </EditText>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCalculate"
+            android:text="Calculate"
+            android:layout_marginTop="70dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
